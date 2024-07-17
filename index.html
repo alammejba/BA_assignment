@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mico Hospital</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .header-row {
+        display: flex;
+        align-items: center;
+      }
+
+      .header-row > div {
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-contact">
+        <span><i class="bx bxs-phone bx-sm"></i>Call: +01 1234567890</span>
+        <span><i class="bx bxs-envelope bx-sm"></i>Email: demo@gmail.com</span>
+        <span><i class="bx bxs-location-plus bx-sm"></i>Location</span>
+      </div>
+
+      <div class="header-row">
+        <div style="background-color: #00bfa6; height: 70px; width: 5%"></div>
+        <div>
+          <img
+            src="logo.png"
+            alt="Hospital Image"
+            style="width: 50px; height: 50px; margin: 0"
+          />
+        </div>
+        <div class="nav-container">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Treatment</a></li>
+              <li><a href="#">Doctors</a></li>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="auth-links">
+              <a href="#"
+                ><i class="bx bx-child" style="color: #ffffff"></i>Login</a
+              >
+              <a href="#"
+                ><i class="bx bx-child" style="color: #ffffff"></i>Sign Up</a
+              >
+              <a href="#"
+                ><i class="bx bx-search" style="color: #ffffff"></i
+              ></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <i class="bx bx-play-circle bx-sm" style="color: #00bfa6"></i>
+          <h1>
+            MICO <br />
+            HOSPITAL
+          </h1>
+          <p>When looking at its layout...</p>
+          <button>Contact Us</button>
+        </div>
+        <div class="hero-image">
+          <img src="slider-img.jpg" alt="Hospital Image" />
+        </div>
+        <div class="overlay-image">
+          <img src="dots.png" alt="New Image" />
+        </div>
+        <div class="hero-nav">
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
+        </div>
+      </section>
+      <section class="appointment">
+        <h2>Book Appointment</h2>
+        <form>
+          <input type="text" placeholder="Patient Name" required />
+          <select>
+            <option>Doctor's Name</option>
+          </select>
+          <select>
+            <option>Department's Name</option>
+          </select>
+          <input type="text" placeholder="Phone Number" required />
+          <input type="text" placeholder="Symptoms" />
+          <input type="date" />
+          <button type="submit">Submit Now</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
